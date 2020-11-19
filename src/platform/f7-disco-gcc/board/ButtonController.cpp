@@ -6,6 +6,7 @@
  */
 #include "board/ButtonController.h"
 #include <trace/trace.h>
+#include <Inc/debug-config.h>
 ButtonController* ButtonController::_pInstance = nullptr;
 ButtonController::ButtonController(){
 	// TODO Auto-generated constructor stub
@@ -45,7 +46,9 @@ int ButtonController::getState(){
 }
 
 XFEventStatus ButtonController::processEvent() {
+#ifdef TRACEDEBUG
 	Trace::out("Went in ButtonController::processEvent\r\n");
+#endif
 	eEventStatus eventStatus = XFEventStatus::Unknown;
 	ButtonControllerState oldState = state;
 
@@ -98,12 +101,13 @@ void ButtonController::doCheckButtons(){
 	btnState[1] = HAL_GPIO_ReadPin(BUTTON1_GPIO_Port, BUTTON1_Pin);
 	btnState[2] = HAL_GPIO_ReadPin(BUTTON2_GPIO_Port, BUTTON2_Pin);
 	btnState[3] = HAL_GPIO_ReadPin(BUTTON3_GPIO_Port, BUTTON3_Pin);
+#ifdef TRACEDEBUG
 	Trace::out("Went in ButtonController::doCheckButton\r\n");
 	Trace::out("BTN0 : %d, BTN1 : %d, BTN2 : %d, BTN3 : %d\r\n",
 			btnState[0], btnState[1], btnState[2] ,btnState[3]);
 	Trace::out("OLDBTN0 : %d, OLDBTN1 : %d, OLDBTN2 : %d, OLDBTN3 : %d\r\n",
 			oldBtnState[0], oldBtnState[1], oldBtnState[2] ,oldBtnState[3]);
-
+#endif
 	for (int i = 0; i<4; i++){
 		if (btnState[i] != oldBtnState[i]){
 			oldBtnState[i] = btnState[i];

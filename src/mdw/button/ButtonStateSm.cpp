@@ -7,7 +7,7 @@
 
 #include <button/ButtonStateSm.h>
 #include <trace/trace.h>
-
+#include <Inc/debug-config.h>
 
 ButtonStateSm::ButtonStateSm(ButtonIndex index, ButtonEventsHandler* handler) {
 	// TODO Auto-generated constructor stub
@@ -32,7 +32,9 @@ void ButtonStateSm::doNotifyButtonLongPressed(){
 }
 
 XFEventStatus ButtonStateSm::processEvent() {
+#ifdef TRACEDEBUG
 	Trace::out("Went in ButtonStateSm%d::processEvent\r\n", this->btnIndex);
+#endif
 	eEventStatus eventStatus = XFEventStatus::Unknown;
 
 	oldState = btnState;
@@ -56,7 +58,9 @@ XFEventStatus ButtonStateSm::processEvent() {
 			//SHORT PRESS
 			if(getCurrentEvent()->getEventType() == XFEvent::Event
 					&& getCurrentEvent()->getId() == EventIds::evButtonReleasedId){ //On a release le button < timeLongPress
+#ifdef TRACEDEBUG
 				Trace::out("SHORT PRESS\r\n");
+#endif
 				btnState = BUTTON_SHORT_PRESSED;
 				unscheduleTimeout(EventIds::evButtonLongPressedId); //On désactive le schedule long press
 				eventStatus = XFEventStatus::Consumed;
@@ -64,7 +68,9 @@ XFEventStatus ButtonStateSm::processEvent() {
 			//LONG PRESS
 			if (getCurrentEvent()->getEventType() == XFEvent::Timeout
 					&& getCurrentEvent()->getId() == EventIds::evButtonLongPressedId){
+#ifdef TRACEDEBUG
 				Trace::out("LONG PRESS\r\n");
+#endif
 				btnState = BUTTON_LONG_PRESSED;
 				eventStatus = XFEventStatus::Consumed;
 			}
@@ -88,12 +94,16 @@ XFEventStatus ButtonStateSm::processEvent() {
 		switch(btnState)
 		{
 			case BUTTON_SHORT_PRESSED:
+#ifdef TRACEDEBUG
 				Trace::out("SEND SHORT PRESS\r\n");
+#endif
 				doNotifyButtonShortPressed();
 				GEN(XFNullTransition);
 				break;
 			case BUTTON_LONG_PRESSED:
+#ifdef TRACEDEBUG
 				Trace::out("SEND LONG PRESS\r\n");
+#endif
 				doNotifyButtonLongPressed();
 				GEN(XFNullTransition);
 				break;

@@ -1,10 +1,10 @@
-ButtonController.cpp:32:37:void __tcf_0()	0	static
-ButtonController.cpp:37:6:virtual bool ButtonController::registerCallback(interface::ButtonsControllerCallbackProvider*, interface::ButtonsControllerCallbackProvider::CallbackMethod)	16	static
-ButtonController.cpp:27:1:ButtonController::~ButtonController()	8	static
-ButtonController.cpp:27:1:virtual ButtonController::~ButtonController()	8	static
-ButtonController.cpp:31:6:virtual void ButtonController::onIrq()	16	static
-ButtonController.cpp:10:1:ButtonController::ButtonController()	16	static
-ButtonController.cpp:43:5:int ButtonController::getState()	0	static
-ButtonController.cpp:96:6:void ButtonController::doCheckButtons()	32	static
-ButtonController.cpp:47:15:virtual XFEventStatus ButtonController::processEvent()	16	static
-ButtonController.cpp:118:19:static ButtonController* ButtonController::getInstance()	0	static
+ButtonController.cpp:33:37:void __tcf_0()	0	static
+ButtonController.cpp:38:6:virtual bool ButtonController::registerCallback(interface::ButtonsControllerCallbackProvider*, interface::ButtonsControllerCallbackProvider::CallbackMethod)	16	static
+ButtonController.cpp:28:1:ButtonController::~ButtonController()	8	static
+ButtonController.cpp:28:1:virtual ButtonController::~ButtonController()	8	static
+ButtonController.cpp:32:6:virtual void ButtonController::onIrq()	16	static
+ButtonController.cpp:11:1:ButtonController::ButtonController()	16	static
+ButtonController.cpp:44:5:int ButtonController::getState()	0	static
+ButtonController.cpp:99:6:void ButtonController::doCheckButtons()	24	static
+ButtonController.cpp:48:15:virtual XFEventStatus ButtonController::processEvent()	16	static
+ButtonController.cpp:122:19:static ButtonController* ButtonController::getInstance()	0	static

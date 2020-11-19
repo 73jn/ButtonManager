@@ -64,7 +64,8 @@ Src/isrs.o: ../Src/isrs.cpp \
  c:\users\jeann\cpp\patternlaboratory\work\buttonmanager\src\xf\include\xf\xf.h \
  c:\users\jeann\cpp\patternlaboratory\work\buttonmanager\src\event\events.h \
  c:\users\jeann\cpp\patternlaboratory\work\buttonmanager\src\event\events.h \
- C:/Users/jeann/cpp/PatternLaboratory/work/ButtonManager/ide-sw4stm32/ButtonManager/Inc/main.h
+ C:/Users/jeann/cpp/PatternLaboratory/work/ButtonManager/ide-sw4stm32/ButtonManager/Inc/main.h \
+ C:/Users/jeann/cpp/PatternLaboratory/work/ButtonManager/ide-sw4stm32/ButtonManager/Inc/debug-config.h
 
 c:\users\jeann\cpp\patternlaboratory\work\buttonmanager\src\platform\f7-disco-gcc\mcu\mcu.h:
 
@@ -197,3 +198,5 @@ c:\users\jeann\cpp\patternlaboratory\work\buttonmanager\src\event\events.h:
 c:\users\jeann\cpp\patternlaboratory\work\buttonmanager\src\event\events.h:
 
 C:/Users/jeann/cpp/PatternLaboratory/work/ButtonManager/ide-sw4stm32/ButtonManager/Inc/main.h:
+
+C:/Users/jeann/cpp/PatternLaboratory/work/ButtonManager/ide-sw4stm32/ButtonManager/Inc/debug-config.h:

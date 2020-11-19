@@ -7,6 +7,7 @@
 #include "ButtonEventsHandler.h"
 #include <mdw/button/ButtonEventsHandler.h>
 #include <trace/trace.h>
+#include <Inc/debug-config.h>
 ButtonEventsHandler* ButtonEventsHandler::_pInstance = nullptr;
 
 ButtonEventsHandler::ButtonEventsHandler() {
@@ -25,16 +26,22 @@ ButtonEventsHandler::~ButtonEventsHandler() {
 	// TODO Auto-generated destructor stub
 }
 void ButtonEventsHandler::onButtonChanged(ButtonIndex buttonIndex, bool pressed) {
+#ifdef TRACEDEBUG
 	Trace::out("Went in ButtonEventsHandler::onButtonChanged : ");
+#endif
 	ButtonStateSm* btnSM;
 	btnSM = _vectBtnStateSM.at(buttonIndex);
 	if (!pressed){
 		//Push pressed event in SM n°index button
+#ifdef TRACEDEBUG
 		Trace::out("PRESSED\r\n");
+#endif
 		btnSM->pushEvent(new XFEvent(XFEvent::Event,EventIds::evButtonPressedId,btnSM));
 	} else {
 		//Push unpressed in SM n°index button
+#ifdef TRACEDEBUG
 		Trace::out("UNPRESSED\r\n");
+#endif
 		btnSM->pushEvent(new XFEvent(XFEvent::Event,EventIds::evButtonReleasedId,btnSM));
 	}
 }
