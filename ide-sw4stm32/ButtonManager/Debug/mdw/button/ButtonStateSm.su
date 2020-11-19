@@ -1,0 +1,6 @@
+ButtonStateSm.cpp:22:1:ButtonStateSm::~ButtonStateSm()	8	static
+ButtonStateSm.cpp:22:1:virtual ButtonStateSm::~ButtonStateSm()	8	static
+ButtonStateSm.cpp:34:15:virtual XFEventStatus ButtonStateSm::processEvent()	24	static
+ButtonStateSm.cpp:12:1:ButtonStateSm::ButtonStateSm(ButtonStateSm::ButtonIndex, ButtonEventsHandler*)	16	static
+ButtonStateSm.cpp:26:6:void ButtonStateSm::doNotifyButtonShortPressed()	0	static
+ButtonStateSm.cpp:30:6:void ButtonStateSm::doNotifyButtonLongPressed()	0	static

@@ -1,0 +1,8 @@
+timeoutmanager.h:35:18:virtual void interface::XFTimeoutManager::initialize(int32_t)	0	static
+xf-default.cpp:31:6:static void XF::initialize(int, int, char**)	8	static
+xf-default.cpp:16:6:void XF_initialize(int)	0	static
+xf-default.cpp:31:6:static void XF::initialize(int, int, char**)	0	static
+xf-default.cpp:42:5:static int XF::exec()	8	static
+xf-default.cpp:21:6:void XF_exec()	0	static
+xf-default.cpp:59:5:static int XF::execOnce()	8	static
+xf-default.cpp:26:6:void XF_execOnce()	0	static

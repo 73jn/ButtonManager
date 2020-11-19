@@ -1,0 +1,5 @@
+ButtonEventsLogger.cpp:17:1:ButtonEventsLogger::~ButtonEventsLogger()	0	static
+ButtonEventsLogger.cpp:21:6:virtual void ButtonEventsLogger::onButtonShortPressed(interface::ButtonEventsHandlerObserver::ButtonIndex)	0	static
+ButtonEventsLogger.cpp:24:6:virtual void ButtonEventsLogger::onButtonLongPressed(interface::ButtonEventsHandlerObserver::ButtonIndex)	0	static
+ButtonEventsLogger.cpp:17:1:virtual ButtonEventsLogger::~ButtonEventsLogger()	8	static
+ButtonEventsLogger.cpp:11:1:ButtonEventsLogger::ButtonEventsLogger()	8	static

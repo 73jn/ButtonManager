@@ -1,0 +1,4 @@
+timeoutmanager.h:43:21:virtual int32_t interface::XFTimeoutManager::getTickInterval() const	0	static
+port-functions.cpp:26:6:void XF_startTimeoutManagerTimer(uint32_t)	0	static
+port-functions.cpp:39:6:void XF_tick()	8	static
+port-functions.cpp:49:9:int32_t XF_tickIntervalInMilliseconds()	8	static

@@ -1,0 +1,8 @@
+trace.cpp:46:16:int32_t checkStringEnding(char*, uint32_t)	4	static
+trace.cpp:21:6:void trace_initialize()	0	static
+trace.cpp:26:6:)	16	static
+trace.cpp:41:6:static void Trace::initialize()	0	static
+trace.cpp:83:6:static void Trace::out(std::__cxx11::string)	24	static
+trace.cpp:92:6:)	16	static
+trace.cpp:104:1:cpp)	0	static
+trace.cpp:104:1:cpp)	0	static

@@ -1,0 +1,4 @@
+factory.cpp:10:7:static void app::Factory::initialize()	0	static
+factory.cpp:14:7:static void app::Factory::build()	24	static
+factory.cpp:24:6:void Factory_initialize()	0	static
+factory.cpp:29:6:void Factory_build()	0	static

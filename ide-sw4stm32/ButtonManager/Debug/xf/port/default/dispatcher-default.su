@@ -1,0 +1,16 @@
+event.h:64:18:virtual bool XFEvent::deleteAfterConsume() const	0	static
+dispatcher.h:68:35:virtual interface::XFThread* interface::XFDispatcher::getThread() const	0	static
+dispatcher-default.h:38:15:virtual bool XFDispatcherDefault::isActive() const	0	static
+dispatcher-default.cpp:38:6:virtual void XFDispatcherDefault::stop()	0	static
+event.h:43:13:virtual XFEvent::~XFEvent()	8	static
+dispatcher-default.cpp:55:6:virtual void XFDispatcherDefault::scheduleTimeout(int, int, interface::XFReactive*)	24	static
+dispatcher-default.cpp:61:6:virtual void XFDispatcherDefault::unscheduleTimeout(int, interface::XFReactive*)	16	static
+dispatcher-default.cpp:32:6:virtual void XFDispatcherDefault::start()	8	static
+dispatcher-default.cpp:122:6:virtual void XFDispatcherDefault::dispatchEvent(const XFEvent*) const	8	static
+event.h:43:13:XFEvent::~XFEvent()	0	static
+dispatcher-default.cpp:19:1:XFDispatcherDefault::XFDispatcherDefault()	16	static
+dispatcher-default.cpp:27:1:XFDispatcherDefault::~XFDispatcherDefault()	8	static
+dispatcher-default.cpp:27:1:virtual XFDispatcherDefault::~XFDispatcherDefault()	8	static
+dispatcher-default.cpp:43:6:virtual void XFDispatcherDefault::pushEvent(XFEvent*)	16	static
+dispatcher-default.cpp:67:5:virtual int XFDispatcherDefault::execute(const void*)	16	static
+dispatcher-default.cpp:84:5:virtual int XFDispatcherDefault::executeOnce()	24	static
