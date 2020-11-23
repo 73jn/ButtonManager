@@ -72,7 +72,10 @@ app/factory.o: \
  c:\users\jeann\cpp\patternlaboratory\work\buttonmanager\src\xf\include\xf\customevent.h \
  c:\users\jeann\cpp\patternlaboratory\work\buttonmanager\src\xf\include\xf\xf.h \
  c:\users\jeann\cpp\patternlaboratory\work\buttonmanager\src\event\events.h \
- C:/Users/jeann/cpp/PatternLaboratory/work/ButtonManager/ide-sw4stm32/ButtonManager/Inc/main.h
+ C:/Users/jeann/cpp/PatternLaboratory/work/ButtonManager/ide-sw4stm32/ButtonManager/Inc/main.h \
+ C:/Users/jeann/cpp/PatternLaboratory/work/ButtonManager/src/app/LedEventsLogger.h \
+ c:\users\jeann\cpp\patternlaboratory\work\buttonmanager\src\platform\f7-disco-gcc\board\ledcontroller.h \
+ C:/Users/jeann/cpp/PatternLaboratory/work/ButtonManager/src/app/LedEventsSm.h
 
 C:/Users/jeann/cpp/PatternLaboratory/work/ButtonManager/src/app/factory.h:
 
@@ -219,3 +222,9 @@ c:\users\jeann\cpp\patternlaboratory\work\buttonmanager\src\xf\include\xf\xf.h:
 c:\users\jeann\cpp\patternlaboratory\work\buttonmanager\src\event\events.h:
 
 C:/Users/jeann/cpp/PatternLaboratory/work/ButtonManager/ide-sw4stm32/ButtonManager/Inc/main.h:
+
+C:/Users/jeann/cpp/PatternLaboratory/work/ButtonManager/src/app/LedEventsLogger.h:
+
+c:\users\jeann\cpp\patternlaboratory\work\buttonmanager\src\platform\f7-disco-gcc\board\ledcontroller.h:
+
+C:/Users/jeann/cpp/PatternLaboratory/work/ButtonManager/src/app/LedEventsSm.h:

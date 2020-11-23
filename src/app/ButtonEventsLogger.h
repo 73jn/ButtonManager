@@ -18,8 +18,8 @@ public:
 	virtual ~ButtonEventsLogger();
 
 protected:
-	void onButtonShortPressed(ButtonIndex buttonIndex);
-	void onButtonLongPressed(ButtonIndex buttonIndex);
+	void onButtonShortPressed(ButtonIndex buttonIndex) override;
+	void onButtonLongPressed(ButtonIndex buttonIndex) override;
 };
 
 #endif /* BUTTONEVENTSLOGGER_H_ */

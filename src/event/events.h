@@ -7,7 +7,10 @@ typedef enum
 	evButtonPressedId,
 	evButtonReleasedId,
 	tmDebounceId,
-	evButtonLongPressedId
+	evButtonLongPressedId,
+	evButtonShortPressedId,
+	tmOnLedId,
+	tmOffLedId
 
 } EventIds;
 

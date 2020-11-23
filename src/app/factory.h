@@ -11,6 +11,8 @@
 #include "ButtonEventsLogger.h"
 #include "platform/f7-disco-gcc/board/ButtonController.h"
 #include "mdw/button/ButtonEventsHandler.h"
+#include "LedEventsLogger.h"
+#include <platform/f7-disco-gcc/board/ledcontroller.h>
 // TODO: Add C++ specific includes here
 
 namespace app
@@ -25,7 +27,8 @@ public:
     static ButtonEventsLogger *_theButtonEventsLogger;
     static ButtonController* _theButtonController;
     static ButtonEventsHandler* _theButtonEventsHandler;
-
+    static LedEventsLogger* _theLedEventsLogger;
+    //static LedController* _theLedController;
 protected:
     // TODO: Add static attributes here
 };

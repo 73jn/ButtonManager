@@ -32,6 +32,8 @@
 "Src/syscalls.o"
 "Src/system_stm32f7xx.o"
 "app/ButtonEventsLogger.o"
+"app/LedEventsLogger.o"
+"app/LedEventsSm.o"
 "app/factory.o"
 "event/evbuttonirq.o"
 "event/evbuttonpressed.o"

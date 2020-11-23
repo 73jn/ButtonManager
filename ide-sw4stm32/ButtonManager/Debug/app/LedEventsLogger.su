@@ -1,0 +1,9 @@
+event.h:43:13:XFEvent::~XFEvent()	0	static
+event.h:64:18:virtual bool XFEvent::deleteAfterConsume() const	0	static
+LedEventsLogger.cpp:17:1:LedEventsLogger::~LedEventsLogger()	8	static
+event.h:43:13:virtual XFEvent::~XFEvent()	8	static
+LedEventsLogger.cpp:17:1:virtual LedEventsLogger::~LedEventsLogger()	8	static
+LedEventsLogger.cpp:20:6:virtual void LedEventsLogger::onButtonShortPressed(interface::ButtonEventsHandlerObserver::ButtonIndex)	16	static
+LedEventsLogger.cpp:26:6:virtual void LedEventsLogger::onButtonLongPressed(interface::ButtonEventsHandlerObserver::ButtonIndex)	16	static
+vector.tcc:394:7:) [with _Args = {LedEventsSm*}; _Tp = LedEventsSm*; _Alloc = std::allocator<LedEventsSm*>]	48	static
+LedEventsLogger.cpp:9:1:LedEventsLogger::LedEventsLogger()	32	static
