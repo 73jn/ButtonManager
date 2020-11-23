@@ -31,8 +31,9 @@ public:
 	void notifyButtonLongPressed(ButtonIndex buttonIndex) override; ///< @brief Notifies observers about a button long pressed.
 
 
-	ButtonEventsHandlerObserver* _subscriber;
+	//ButtonEventsHandlerObserver* _subscriber;
 	std::vector<ButtonStateSm*> _vectBtnStateSM;
+	std::vector<ButtonEventsHandlerObserver*> _vectSubscribers;
     static ButtonEventsHandler* _pInstance;
 
 };

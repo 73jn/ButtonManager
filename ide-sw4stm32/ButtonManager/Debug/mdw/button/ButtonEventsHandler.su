@@ -1,14 +1,13 @@
 event.h:43:13:XFEvent::~XFEvent()	0	static
 event.h:64:18:virtual bool XFEvent::deleteAfterConsume() const	0	static
-ButtonEventsHandler.cpp:48:6:virtual bool ButtonEventsHandler::subscribe(interface::ButtonEventsHandlerObserver*)	0	static
-ButtonEventsHandler.cpp:51:6:virtual void ButtonEventsHandler::unsubscribe(interface::ButtonEventsHandlerObserver*)	0	static
-ButtonEventsHandler.cpp:55:6:virtual void ButtonEventsHandler::notifyButtonShortPressed(interface::ButtonEventsHandlerSubject::ButtonIndex)	0	static
-ButtonEventsHandler.cpp:58:6:virtual void ButtonEventsHandler::notifyButtonLongPressed(interface::ButtonEventsHandlerSubject::ButtonIndex)	0	static
+ButtonEventsHandler.cpp:59:6:virtual void ButtonEventsHandler::notifyButtonShortPressed(interface::ButtonEventsHandlerSubject::ButtonIndex)	16	static
+ButtonEventsHandler.cpp:63:6:virtual void ButtonEventsHandler::notifyButtonLongPressed(interface::ButtonEventsHandlerSubject::ButtonIndex)	16	static
 event.h:43:13:virtual XFEvent::~XFEvent()	8	static
+ButtonEventsHandler.cpp:51:6:virtual void ButtonEventsHandler::unsubscribe(interface::ButtonEventsHandlerObserver*)	16	static
 ButtonEventsHandler.cpp:25:1:ButtonEventsHandler::~ButtonEventsHandler()	8	static
 ButtonEventsHandler.cpp:25:1:virtual ButtonEventsHandler::~ButtonEventsHandler()	8	static
-ButtonEventsHandler.h:27:7:virtual void ButtonEventsHandler::_ZThn4_N19ButtonEventsHandler11unsubscribeEPN9interface27ButtonEventsHandlerObserverE(interface::ButtonEventsHandlerObserver*)	0	static
-ButtonEventsHandler.h:26:7:virtual bool ButtonEventsHandler::_ZThn4_N19ButtonEventsHandler9subscribeEPN9interface27ButtonEventsHandlerObserverE(interface::ButtonEventsHandlerObserver*)	0	static
 ButtonEventsHandler.cpp:28:6:void ButtonEventsHandler::onButtonChanged(interface::ButtonEventsHandlerSubject::ButtonIndex, bool)	16	static
+vector.tcc:394:7:) [with _Args = {interface::ButtonEventsHandlerObserver* const&}; _Tp = interface::ButtonEventsHandlerObserver*; _Alloc = std::allocator<interface::ButtonEventsHandlerObserver*>]	48	static
+ButtonEventsHandler.cpp:48:6:virtual bool ButtonEventsHandler::subscribe(interface::ButtonEventsHandlerObserver*)	16	static
 vector.tcc:394:7:) [with _Args = {ButtonStateSm*}; _Tp = ButtonStateSm*; _Alloc = std::allocator<ButtonStateSm*>]	48	static
 ButtonEventsHandler.cpp:13:1:ButtonEventsHandler::ButtonEventsHandler()	32	static

@@ -46,15 +46,21 @@ void ButtonEventsHandler::onButtonChanged(ButtonIndex buttonIndex, bool pressed)
 	}
 }
 bool ButtonEventsHandler::subscribe(ButtonEventsHandlerObserver *observer) {
-	_subscriber = observer;
+	_vectSubscribers.push_back(observer);
 }
 void ButtonEventsHandler::unsubscribe(ButtonEventsHandlerObserver *observer) {
-	_subscriber = observer;
+	  for (std::vector<ButtonEventsHandlerObserver*>::iterator it = _vectSubscribers.begin() ; it <_vectSubscribers.end(); it++){
+	    if (*it == observer){
+	    	_vectSubscribers.erase(it);
+	    }
+	  }
 }
 
 void ButtonEventsHandler::notifyButtonShortPressed(ButtonIndex buttonIndex){
-	_subscriber->onButtonShortPressed(buttonIndex);
+	  for (std::vector<ButtonEventsHandlerObserver*>::iterator it = _vectSubscribers.begin() ; it < _vectSubscribers.end(); it++)
+	    	(*it)->onButtonShortPressed(buttonIndex);
 }
 void ButtonEventsHandler::notifyButtonLongPressed(ButtonIndex buttonIndex){
-	_subscriber->onButtonLongPressed(buttonIndex);
+	  for (std::vector<ButtonEventsHandlerObserver*>::iterator it = _vectSubscribers.begin() ; it < _vectSubscribers.end(); it++)
+	    	(*it)->onButtonLongPressed(buttonIndex);
 }
