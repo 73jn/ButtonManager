@@ -18,23 +18,21 @@
 
 using namespace interface;
 class ButtonController : public ButtonIrq, public ButtonsControllerCallbackCaller, public XFBehavior {
-public:
+public :
 	ButtonController();
 	virtual ~ButtonController();
-	typedef enum {STATE_INITIAL,STATE_CHECK_BUTTONS,STATE_DEBOUNCE} ButtonControllerState;
-
-	void doCheckButtons();
-	void onIrq() override;	///< @brief Called by the ISR.
+	static ButtonController* getInstance();
     bool registerCallback(ButtonsControllerCallbackProvider * callbackProvider,
                                   ButtonsControllerCallbackProvider::CallbackMethod callbackMethod) override;
-
-
-	XFEventStatus processEvent() override;		///< Remplementation from XFBehavior
-
-	int getState();
-	static ButtonController* getInstance();
+	void onIrq() override;	///< @brief Called by the ISR.
 protected :
+	typedef enum {STATE_INITIAL,STATE_CHECK_BUTTONS,STATE_DEBOUNCE} ButtonControllerState;
 	static ButtonController* _pInstance;
+
+
+	void doCheckButtons();
+	XFEventStatus processEvent() override;		///< Remplementation from XFBehavior
+	int getState();
 private:
 	ButtonsControllerCallbackProvider* _theCallBackProvider;
 	ButtonsControllerCallbackProvider::CallbackMethod _theCallBackMethod;

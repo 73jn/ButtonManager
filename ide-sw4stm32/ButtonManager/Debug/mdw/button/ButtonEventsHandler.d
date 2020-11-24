@@ -62,7 +62,8 @@ mdw/button/ButtonEventsHandler.o: \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h \
- C:/Users/jeann/cpp/PatternLaboratory/work/ButtonManager/ide-sw4stm32/ButtonManager/Inc/debug-config.h
+ C:/Users/jeann/cpp/PatternLaboratory/work/ButtonManager/ide-sw4stm32/ButtonManager/Inc/debug-config.h \
+ C:/Users/jeann/cpp/PatternLaboratory/work/ButtonManager/ide-sw4stm32/ButtonManager/Inc/gpio-config.h
 
 C:/Users/jeann/cpp/PatternLaboratory/work/ButtonManager/src/mdw/button/ButtonEventsHandler.h:
 
@@ -189,3 +190,5 @@ c:\users\jeann\cpp\patternlaboratory\work\buttonmanager\src\platform\f7-disco-gc
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:
 
 C:/Users/jeann/cpp/PatternLaboratory/work/ButtonManager/ide-sw4stm32/ButtonManager/Inc/debug-config.h:
+
+C:/Users/jeann/cpp/PatternLaboratory/work/ButtonManager/ide-sw4stm32/ButtonManager/Inc/gpio-config.h:

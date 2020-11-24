@@ -23,25 +23,25 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
   9 .ARM.attributes 00000030  00000000  00000000  00020074  2**0
                   CONTENTS, READONLY
- 10 .debug_info   000749b9  00000000  00000000  000200a4  2**0
+ 10 .debug_info   000749b5  00000000  00000000  000200a4  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_abbrev 0000e07a  00000000  00000000  00094a5d  2**0
+ 11 .debug_abbrev 0000e07a  00000000  00000000  00094a59  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_loc    00019ff6  00000000  00000000  000a2ad7  2**0
+ 12 .debug_loc    00019ff6  00000000  00000000  000a2ad3  2**0
                   CONTENTS, READONLY, DEBUGGING
  13 .debug_aranges 00001b68  00000000  00000000  000bcad0  2**3
                   CONTENTS, READONLY, DEBUGGING
  14 .debug_ranges 00003dd0  00000000  00000000  000be638  2**3
                   CONTENTS, READONLY, DEBUGGING
- 15 .debug_macro  00037bf5  00000000  00000000  000c2408  2**0
+ 15 .debug_macro  00037c0f  00000000  00000000  000c2408  2**0
                   CONTENTS, READONLY, DEBUGGING
- 16 .debug_line   00033545  00000000  00000000  000f9ffd  2**0
+ 16 .debug_line   0003356c  00000000  00000000  000fa017  2**0
                   CONTENTS, READONLY, DEBUGGING
- 17 .debug_str    0012498f  00000000  00000000  0012d542  2**0
+ 17 .debug_str    001249a7  00000000  00000000  0012d583  2**0
                   CONTENTS, READONLY, DEBUGGING
- 18 .comment      0000007b  00000000  00000000  00251ed1  2**0
+ 18 .comment      0000007b  00000000  00000000  00251f2a  2**0
                   CONTENTS, READONLY
- 19 .debug_frame  00006814  00000000  00000000  00251f4c  2**2
+ 19 .debug_frame  00006814  00000000  00000000  00251fa8  2**2
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -12263,7 +12263,7 @@ ButtonEventsHandler::ButtonEventsHandler() {
 	assert(!_pInstance);
  800485e:	3238      	adds	r2, #56	; 0x38
  8004860:	4b04      	ldr	r3, [pc, #16]	; (8004874 <_ZN19ButtonEventsHandlerC1Ev+0x7c>)
- 8004862:	210e      	movs	r1, #14
+ 8004862:	210f      	movs	r1, #15
  8004864:	4804      	ldr	r0, [pc, #16]	; (8004878 <_ZN19ButtonEventsHandlerC1Ev+0x80>)
  8004866:	f001 fa7f 	bl	8005d68 <__assert_func>
  800486a:	bf00      	nop
@@ -12568,11 +12568,11 @@ bool ButtonController::registerCallback(ButtonsControllerCallbackProvider * call
  8004a16:	bf00      	nop
 
 08004a18 <_ZThn4_N16ButtonController16registerCallbackEPN9interface33ButtonsControllerCallbackProviderEMS1_FvtbE>:
+class ButtonController : public ButtonIrq, public ButtonsControllerCallbackCaller, public XFBehavior {
+public :
+	ButtonController();
 	virtual ~ButtonController();
-	typedef enum {STATE_INITIAL,STATE_CHECK_BUTTONS,STATE_DEBOUNCE} ButtonControllerState;
-
-	void doCheckButtons();
-	void onIrq() override;	///< @brief Called by the ISR.
+	static ButtonController* getInstance();
     bool registerCallback(ButtonsControllerCallbackProvider * callbackProvider,
  8004a18:	f1a0 0004 	sub.w	r0, r0, #4
  8004a1c:	f7ff bfec 	b.w	80049f8 <_ZN16ButtonController16registerCallbackEPN9interface33ButtonsControllerCallbackProviderEMS1_FvtbE>
@@ -12931,9 +12931,11 @@ XFEventStatus ButtonController::processEvent() {
  8004c8e:	e7d4      	b.n	8004c3a <_ZN16ButtonController12processEventEv+0x52>
 
 08004c90 <_ZThn8_N16ButtonController12processEventEv>:
-                                  ButtonsControllerCallbackProvider::CallbackMethod callbackMethod) override;
+	typedef enum {STATE_INITIAL,STATE_CHECK_BUTTONS,STATE_DEBOUNCE} ButtonControllerState;
+	static ButtonController* _pInstance;
 
 
+	void doCheckButtons();
 	XFEventStatus processEvent() override;		///< Remplementation from XFBehavior
  8004c90:	f1a0 0008 	sub.w	r0, r0, #8
  8004c94:	f7ff bfa8 	b.w	8004be8 <_ZN16ButtonController12processEventEv>

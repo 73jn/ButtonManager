@@ -8,6 +8,7 @@
 #include <mdw/button/ButtonEventsHandler.h>
 #include <trace/trace.h>
 #include <Inc/debug-config.h>
+#include <Inc/gpio-config.h>
 ButtonEventsHandler* ButtonEventsHandler::_pInstance = nullptr;
 
 ButtonEventsHandler::ButtonEventsHandler() {
@@ -31,7 +32,13 @@ void ButtonEventsHandler::onButtonChanged(ButtonIndex buttonIndex, bool pressed)
 #endif
 	ButtonStateSm* btnSM;
 	btnSM = _vectBtnStateSM.at(buttonIndex);
+#ifdef PULLUP
 	if (!pressed){
+#endif
+#ifdef PULLDOWN
+		if(pressed){
+#endif
+
 		//Push pressed event in SM n°index button
 #ifdef TRACEDEBUG
 		Trace::out("PRESSED\r\n");
