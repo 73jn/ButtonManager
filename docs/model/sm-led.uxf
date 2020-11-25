@@ -4,8 +4,8 @@
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>850</x>
-      <y>10</y>
+      <x>810</x>
+      <y>190</y>
       <w>20</w>
       <h>20</h>
     </coordinates>
@@ -15,8 +15,8 @@
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>760</x>
-      <y>80</y>
+      <x>720</x>
+      <y>260</y>
       <w>210</w>
       <h>40</h>
     </coordinates>
@@ -26,8 +26,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>850</x>
-      <y>20</y>
+      <x>810</x>
+      <y>200</y>
       <w>30</w>
       <h>80</h>
     </coordinates>
@@ -37,8 +37,8 @@
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>920</x>
-      <y>250</y>
+      <x>880</x>
+      <y>430</y>
       <w>260</w>
       <h>50</h>
     </coordinates>
@@ -50,8 +50,8 @@ _theLedController-&gt;setLed(index, 1);</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>920</x>
-      <y>380</y>
+      <x>880</x>
+      <y>560</y>
       <w>260</w>
       <h>50</h>
     </coordinates>
@@ -63,8 +63,8 @@ _theLedController-&gt;setLed(index, 0);</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>570</x>
-      <y>250</y>
+      <x>530</x>
+      <y>430</y>
       <w>270</w>
       <h>50</h>
     </coordinates>
@@ -76,8 +76,8 @@ _theLedController-&gt;setLed(index, 1);</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>570</x>
-      <y>380</y>
+      <x>530</x>
+      <y>560</y>
       <w>270</w>
       <h>50</h>
     </coordinates>
@@ -89,8 +89,21 @@ _theLedController-&gt;setLed(index, 0);</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1040</x>
-      <y>290</y>
+      <x>1000</x>
+      <y>470</y>
+      <w>100</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+tmOnLedId
+after(500)</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>470</y>
       <w>100</w>
       <h>110</h>
     </coordinates>
@@ -103,20 +116,7 @@ after(500)</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>700</x>
-      <y>290</y>
-      <w>100</w>
-      <h>110</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-tmOnLedId
-after(500)</panel_attributes>
-    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>740</x>
-      <y>220</y>
+      <y>400</y>
       <w>330</w>
       <h>270</h>
     </coordinates>
@@ -128,8 +128,8 @@ after (200)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>520</x>
-      <y>20</y>
+      <x>480</x>
+      <y>200</y>
       <w>300</w>
       <h>490</h>
     </coordinates>
@@ -139,8 +139,8 @@ after (200)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>650</x>
-      <y>110</y>
+      <x>610</x>
+      <y>290</y>
       <w>180</w>
       <h>160</h>
     </coordinates>
@@ -151,8 +151,8 @@ r1=evButtonShortPressedId</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>920</x>
-      <y>110</y>
+      <x>880</x>
+      <y>290</y>
       <w>300</w>
       <h>160</h>
     </coordinates>
