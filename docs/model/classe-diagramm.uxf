@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>7</zoom_level>
+  <zoom_level>6</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>14</x>
-      <y>665</y>
-      <w>315</w>
-      <h>133</h>
+      <x>12</x>
+      <y>654</y>
+      <w>270</w>
+      <h>114</h>
     </coordinates>
     <panel_attributes>ButtonsEventsHandler
 -
@@ -26,10 +26,10 @@ notifyButtonLongPressed(buttonIndex : ButtonIndex) : void &lt;&lt;override&gt;&g
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>224</x>
-      <y>266</y>
-      <w>266</w>
-      <h>154</h>
+      <x>192</x>
+      <y>312</y>
+      <w>228</w>
+      <h>132</h>
     </coordinates>
     <panel_attributes>/ButtonEventsHandlerSubject/
 -
@@ -42,10 +42,10 @@ notifyButtonLongPressed(buttonIndex : ButtonIndex) : void &lt;&lt;override&gt;&g
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>98</x>
-      <y>350</y>
-      <w>140</w>
-      <h>329</h>
+      <x>84</x>
+      <y>384</y>
+      <w>120</w>
+      <h>282</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>180.0;10.0;10.0;10.0;10.0;450.0</additional_attributes>
@@ -53,10 +53,10 @@ notifyButtonLongPressed(buttonIndex : ButtonIndex) : void &lt;&lt;override&gt;&g
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>371</x>
-      <y>504</y>
-      <w>154</w>
-      <h>42</h>
+      <x>318</x>
+      <y>516</y>
+      <w>132</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>/ButtonsControllerCallbackProvider/
 -
@@ -66,10 +66,10 @@ notifyButtonLongPressed(buttonIndex : ButtonIndex) : void &lt;&lt;override&gt;&g
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>224</x>
-      <y>441</y>
-      <w>455</w>
-      <h>35</h>
+      <x>192</x>
+      <y>462</y>
+      <w>390</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>&lt;&lt;typedef&gt;&gt;
 void (ButtonsControllerCallbackProvider::*CallbackMethod)(uint16_t buttonIndex, bool pressed)</panel_attributes>
@@ -78,10 +78,10 @@ void (ButtonsControllerCallbackProvider::*CallbackMethod)(uint16_t buttonIndex, 
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>441</x>
-      <y>469</y>
-      <w>21</w>
-      <h>49</h>
+      <x>378</x>
+      <y>486</y>
+      <w>18</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
@@ -89,10 +89,10 @@ void (ButtonsControllerCallbackProvider::*CallbackMethod)(uint16_t buttonIndex, 
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>231</x>
-      <y>539</y>
-      <w>231</w>
-      <h>140</h>
+      <x>198</x>
+      <y>546</y>
+      <w>198</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>310.0;10.0;310.0;120.0;10.0;120.0;10.0;180.0</additional_attributes>
@@ -100,10 +100,10 @@ void (ButtonsControllerCallbackProvider::*CallbackMethod)(uint16_t buttonIndex, 
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>826</x>
-      <y>448</y>
-      <w>91</w>
-      <h>63</h>
+      <x>708</x>
+      <y>468</y>
+      <w>78</w>
+      <h>54</h>
     </coordinates>
     <panel_attributes>/ButtonIrq/
 -
@@ -113,10 +113,10 @@ void (ButtonsControllerCallbackProvider::*CallbackMethod)(uint16_t buttonIndex, 
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>511</x>
-      <y>665</y>
-      <w>224</w>
-      <h>133</h>
+      <x>438</x>
+      <y>654</y>
+      <w>192</w>
+      <h>114</h>
     </coordinates>
     <panel_attributes>&lt;&lt;XFBehavior&gt;&gt;
 ButtonStateSm
@@ -135,10 +135,10 @@ doNotifyButtonLongPressed() : void
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>525</x>
-      <y>602</y>
-      <w>105</w>
-      <h>35</h>
+      <x>450</x>
+      <y>600</y>
+      <w>90</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>&lt;&lt;typedef&gt;&gt;
 uint8_t ButtonIndex</panel_attributes>
@@ -147,10 +147,10 @@ uint8_t ButtonIndex</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>574</x>
-      <y>630</y>
-      <w>21</w>
-      <h>49</h>
+      <x>492</x>
+      <y>624</y>
+      <w>18</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
@@ -158,10 +158,10 @@ uint8_t ButtonIndex</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>644</x>
-      <y>602</y>
-      <w>84</w>
-      <h>35</h>
+      <x>552</x>
+      <y>600</y>
+      <w>72</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>&lt;&lt;enum&gt;&gt;
 ButtonState</panel_attributes>
@@ -170,10 +170,10 @@ ButtonState</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>679</x>
-      <y>630</y>
-      <w>21</w>
-      <h>49</h>
+      <x>582</x>
+      <y>624</y>
+      <w>18</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
@@ -182,9 +182,9 @@ ButtonState</panel_attributes>
     <id>UMLPackage</id>
     <coordinates>
       <x>0</x>
-      <y>581</y>
-      <w>749</w>
-      <h>231</h>
+      <y>582</y>
+      <w>642</w>
+      <h>198</h>
     </coordinates>
     <panel_attributes>mdw/button
 --
@@ -194,10 +194,10 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>791</x>
-      <y>679</y>
-      <w>707</w>
-      <h>168</h>
+      <x>678</x>
+      <y>666</y>
+      <w>606</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>&lt;&lt;XFBehavior&gt;&gt;
 ButtonController
@@ -222,10 +222,10 @@ doCheckButton() : void
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1064</x>
-      <y>609</y>
-      <w>133</w>
-      <h>35</h>
+      <x>912</x>
+      <y>606</y>
+      <w>114</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>&lt;&lt;enum&gt;&gt;
 ButtonControllerState</panel_attributes>
@@ -234,10 +234,10 @@ ButtonControllerState</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1120</x>
-      <y>637</y>
-      <w>21</w>
-      <h>56</h>
+      <x>960</x>
+      <y>630</y>
+      <w>18</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
@@ -245,10 +245,10 @@ ButtonControllerState</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>518</x>
-      <y>266</y>
-      <w>399</w>
-      <h>154</h>
+      <x>444</x>
+      <y>312</y>
+      <w>342</w>
+      <h>132</h>
     </coordinates>
     <panel_attributes>/ButtonsControllerCallbackCaller/
 -
@@ -260,10 +260,10 @@ ButtonControllerState</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>749</x>
-      <y>413</y>
-      <w>84</w>
-      <h>280</h>
+      <x>642</x>
+      <y>438</y>
+      <w>72</w>
+      <h>240</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;320.0;100.0;320.0;100.0;380.0</additional_attributes>
@@ -271,10 +271,10 @@ ButtonControllerState</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>868</x>
-      <y>504</y>
-      <w>21</w>
-      <h>189</h>
+      <x>744</x>
+      <y>516</y>
+      <w>18</w>
+      <h>162</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;250.0</additional_attributes>
@@ -282,10 +282,10 @@ ButtonControllerState</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>322</x>
-      <y>721</y>
-      <w>203</w>
-      <h>28</h>
+      <x>276</x>
+      <y>702</y>
+      <w>174</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 4</panel_attributes>
@@ -294,10 +294,10 @@ ButtonControllerState</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>777</x>
-      <y>581</y>
-      <w>735</w>
-      <h>280</h>
+      <x>666</x>
+      <y>582</y>
+      <w>630</w>
+      <h>240</h>
     </coordinates>
     <panel_attributes>platform/f7-disco-gcc/board
 --
@@ -307,10 +307,10 @@ bg=red</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1267</x>
-      <y>406</y>
-      <w>329</w>
-      <h>133</h>
+      <x>1086</x>
+      <y>432</y>
+      <w>282</w>
+      <h>114</h>
     </coordinates>
     <panel_attributes>LedEventsLogger
 -
@@ -326,10 +326,10 @@ onButtonLongPressed(buttonIndex : ButtonIndex) : void &lt;&lt;override&gt;&gt;
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1680</x>
-      <y>406</y>
-      <w>224</w>
-      <h>133</h>
+      <x>1440</x>
+      <y>432</y>
+      <w>192</w>
+      <h>114</h>
     </coordinates>
     <panel_attributes>&lt;&lt;XFBehavior&gt;&gt;
 LedEventsSm
@@ -347,10 +347,10 @@ processEvent() : XFEventStatus &lt;&lt;override&gt;&gt;</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1750</x>
-      <y>350</y>
-      <w>84</w>
-      <h>35</h>
+      <x>1500</x>
+      <y>384</y>
+      <w>72</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>&lt;&lt;enum&gt;&gt;
 LedState</panel_attributes>
@@ -359,10 +359,10 @@ LedState</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1589</x>
-      <y>455</y>
-      <w>105</w>
-      <h>28</h>
+      <x>1362</x>
+      <y>474</y>
+      <w>90</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 4</panel_attributes>
@@ -371,10 +371,10 @@ LedState</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1785</x>
-      <y>378</y>
-      <w>21</w>
-      <h>42</h>
+      <x>1530</x>
+      <y>408</y>
+      <w>18</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
@@ -382,10 +382,10 @@ LedState</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>945</x>
-      <y>357</y>
-      <w>266</w>
-      <h>63</h>
+      <x>810</x>
+      <y>390</y>
+      <w>228</w>
+      <h>54</h>
     </coordinates>
     <panel_attributes>/ButtonEventsHandlerObserver/
 -
@@ -398,10 +398,10 @@ LedState</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1029</x>
-      <y>266</y>
-      <w>105</w>
-      <h>35</h>
+      <x>882</x>
+      <y>312</y>
+      <w>90</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>&lt;&lt;typedef&gt;&gt;
 uint8_t ButtonIndex</panel_attributes>
@@ -410,10 +410,10 @@ uint8_t ButtonIndex</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1071</x>
-      <y>294</y>
-      <w>21</w>
-      <h>77</h>
+      <x>918</x>
+      <y>336</y>
+      <w>18</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
@@ -421,12 +421,12 @@ uint8_t ButtonIndex</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>210</x>
-      <y>203</y>
-      <w>1022</w>
-      <h>357</h>
+      <x>180</x>
+      <y>258</y>
+      <w>876</w>
+      <h>306</h>
     </coordinates>
-    <panel_attributes>EmptyPackage
+    <panel_attributes>interface
 --
 bg=yellow</panel_attributes>
     <additional_attributes/>
@@ -434,10 +434,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1127</x>
-      <y>413</y>
-      <w>154</w>
-      <h>42</h>
+      <x>966</x>
+      <y>438</y>
+      <w>132</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;40.0;200.0;40.0</additional_attributes>
@@ -445,10 +445,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1267</x>
-      <y>315</y>
-      <w>329</w>
-      <h>70</h>
+      <x>1086</x>
+      <y>354</y>
+      <w>282</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>LedEventsLogger
 
@@ -461,10 +461,10 @@ onButtonLongPressed(buttonIndex : ButtonIndex) : void &lt;&lt;override&gt;&gt;
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>1253</x>
-      <y>287</y>
-      <w>665</w>
-      <h>266</h>
+      <x>1074</x>
+      <y>330</y>
+      <w>570</w>
+      <h>228</h>
     </coordinates>
     <panel_attributes>app
 --
@@ -474,10 +474,10 @@ bg=pink</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1169</x>
-      <y>322</y>
-      <w>112</w>
-      <h>49</h>
+      <x>1002</x>
+      <y>360</y>
+      <w>96</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;50.0;10.0;10.0;140.0;10.0</additional_attributes>
@@ -485,10 +485,10 @@ bg=pink</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>518</x>
-      <y>413</y>
-      <w>224</w>
-      <h>126</h>
+      <x>444</x>
+      <y>438</y>
+      <w>192</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 &lt;&lt;Call&gt;&gt;</panel_attributes>
@@ -497,10 +497,10 @@ bg=pink</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>357</x>
-      <y>231</y>
-      <w>644</w>
-      <h>140</h>
+      <x>306</x>
+      <y>282</y>
+      <w>552</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 &lt;&lt;Notify&gt;&gt;</panel_attributes>
