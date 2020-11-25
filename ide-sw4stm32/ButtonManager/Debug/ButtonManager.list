@@ -7,19 +7,19 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
   1 .text         00006f10  080001d0  080001d0  000101d0  2**4
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  2 .rodata       00000a40  080070e0  080070e0  000170e0  2**2
+  2 .rodata       00000a34  080070e0  080070e0  000170e0  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  3 .ARM          00000008  08007b20  08007b20  00017b20  2**2
+  3 .ARM          00000008  08007b14  08007b14  00017b14  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  4 .init_array   00000008  08007b28  08007b28  00017b28  2**2
+  4 .init_array   00000008  08007b1c  08007b1c  00017b1c  2**2
                   CONTENTS, ALLOC, LOAD, DATA
-  5 .fini_array   00000008  08007b30  08007b30  00017b30  2**2
+  5 .fini_array   00000008  08007b24  08007b24  00017b24  2**2
                   CONTENTS, ALLOC, LOAD, DATA
-  6 .data         00000074  20000000  08007b38  00020000  2**2
+  6 .data         00000074  20000000  08007b2c  00020000  2**2
                   CONTENTS, ALLOC, LOAD, DATA
-  7 .bss          00000754  20000074  08007bac  00020074  2**2
+  7 .bss          00000754  20000074  08007ba0  00020074  2**2
                   ALLOC
-  8 ._user_heap_stack 00001400  200007c8  08007bac  000207c8  2**0
+  8 ._user_heap_stack 00001400  200007c8  08007ba0  000207c8  2**0
                   ALLOC
   9 .ARM.attributes 00000030  00000000  00000000  00020074  2**0
                   CONTENTS, READONLY
@@ -12992,27 +12992,27 @@ void LedController::setLed0(bool bOn /* = true */)
 	if (bOn)
 	{
 		// Not using "%s" here (bug in gcc c-library!)
-		Trace::out(" LED0: on");
+		Trace::out("LED0: on\r\n");
  8004cc8:	4808      	ldr	r0, [pc, #32]	; (8004cec <_ZN13LedController7setLed0Eb+0x34>)
 	else
 	{
-		Trace::out(" LED0: off");
+		Trace::out("LED0: off\r\n");
 	}
 #endif // LEDCONTROLLER_TRACE_ENABLE
 }
  8004cca:	e8bd 4008 	ldmia.w	sp!, {r3, lr}
-		Trace::out(" LED0: on");
+		Trace::out("LED0: on\r\n");
  8004cce:	f000 b8d3 	b.w	8004e78 <_ZN5Trace3outEPKcz>
 	    HAL_GPIO_WritePin(LED0_GPIO_Port, LED0_Pin, GPIO_PIN_RESET);
  8004cd2:	460a      	mov	r2, r1
  8004cd4:	4804      	ldr	r0, [pc, #16]	; (8004ce8 <_ZN13LedController7setLed0Eb+0x30>)
  8004cd6:	f44f 4100 	mov.w	r1, #32768	; 0x8000
  8004cda:	f7fc f83f 	bl	8000d5c <HAL_GPIO_WritePin>
-		Trace::out(" LED0: off");
+		Trace::out("LED0: off\r\n");
  8004cde:	4804      	ldr	r0, [pc, #16]	; (8004cf0 <_ZN13LedController7setLed0Eb+0x38>)
 }
  8004ce0:	e8bd 4008 	ldmia.w	sp!, {r3, lr}
-		Trace::out(" LED0: off");
+		Trace::out("LED0: off\r\n");
  8004ce4:	f000 b8c8 	b.w	8004e78 <_ZN5Trace3outEPKcz>
  8004ce8:	40020000 	.word	0x40020000
  8004cec:	08007764 	.word	0x08007764
@@ -13036,27 +13036,27 @@ void LedController::setLed1(bool bOn /* = true */)
 #if (LEDCONTROLLER_TRACE_ENABLE != 0)
     if (bOn)
 	{
-		Trace::out("  LED1: on");
+		Trace::out("LED1: on\r\n");
  8004d02:	4808      	ldr	r0, [pc, #32]	; (8004d24 <_ZN13LedController7setLed1Eb+0x30>)
 	else
 	{
-		Trace::out("  LED1: off");
+		Trace::out("LED1: off\r\n");
 	}
 #endif // LEDCONTROLLER_TRACE_ENABLE
 }
  8004d04:	e8bd 4008 	ldmia.w	sp!, {r3, lr}
-		Trace::out("  LED1: on");
+		Trace::out("LED1: on\r\n");
  8004d08:	f000 b8b6 	b.w	8004e78 <_ZN5Trace3outEPKcz>
         HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
  8004d0c:	460a      	mov	r2, r1
  8004d0e:	4804      	ldr	r0, [pc, #16]	; (8004d20 <_ZN13LedController7setLed1Eb+0x2c>)
  8004d10:	2140      	movs	r1, #64	; 0x40
  8004d12:	f7fc f823 	bl	8000d5c <HAL_GPIO_WritePin>
-		Trace::out("  LED1: off");
+		Trace::out("LED1: off\r\n");
  8004d16:	4804      	ldr	r0, [pc, #16]	; (8004d28 <_ZN13LedController7setLed1Eb+0x34>)
 }
  8004d18:	e8bd 4008 	ldmia.w	sp!, {r3, lr}
-		Trace::out("  LED1: off");
+		Trace::out("LED1: off\r\n");
  8004d1c:	f000 b8ac 	b.w	8004e78 <_ZN5Trace3outEPKcz>
  8004d20:	40021c00 	.word	0x40021c00
  8004d24:	0800777c 	.word	0x0800777c
@@ -13080,27 +13080,27 @@ void LedController::setLed2(bool bOn /* = true */)
 #if (LEDCONTROLLER_TRACE_ENABLE != 0)
     if (bOn)
 	{
-		Trace::out("   LED2: on");
+		Trace::out("LED2: on\r\n");
  8004d3c:	4808      	ldr	r0, [pc, #32]	; (8004d60 <_ZN13LedController7setLed2Eb+0x34>)
 	else
 	{
-		Trace::out("   LED2: off");
+		Trace::out("LED2: off\r\n");
 	}
 #endif // LEDCONTROLLER_TRACE_ENABLE
 }
  8004d3e:	e8bd 4008 	ldmia.w	sp!, {r3, lr}
-		Trace::out("   LED2: on");
+		Trace::out("LED2: on\r\n");
  8004d42:	f000 b899 	b.w	8004e78 <_ZN5Trace3outEPKcz>
         HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_RESET);
  8004d46:	460a      	mov	r2, r1
  8004d48:	4804      	ldr	r0, [pc, #16]	; (8004d5c <_ZN13LedController7setLed2Eb+0x30>)
  8004d4a:	f44f 7180 	mov.w	r1, #256	; 0x100
  8004d4e:	f7fc f805 	bl	8000d5c <HAL_GPIO_WritePin>
-		Trace::out("   LED2: off");
+		Trace::out("LED2: off\r\n");
  8004d52:	4804      	ldr	r0, [pc, #16]	; (8004d64 <_ZN13LedController7setLed2Eb+0x38>)
 }
  8004d54:	e8bd 4008 	ldmia.w	sp!, {r3, lr}
-		Trace::out("   LED2: off");
+		Trace::out("LED2: off\r\n");
  8004d58:	f000 b88e 	b.w	8004e78 <_ZN5Trace3outEPKcz>
  8004d5c:	40020000 	.word	0x40020000
  8004d60:	08007794 	.word	0x08007794
@@ -13124,31 +13124,31 @@ void LedController::setLed3(bool bOn /* = true */)
 #if (LEDCONTROLLER_TRACE_ENABLE != 0)
     if (bOn)
 	{
-		Trace::out("    LED3: on");
+		Trace::out("LED3: on\r\n");
  8004d76:	4808      	ldr	r0, [pc, #32]	; (8004d98 <_ZN13LedController7setLed3Eb+0x30>)
 	else
 	{
-		Trace::out("    LED3: off");
+		Trace::out("LED3: off\r\n");
 	}
 #endif // LEDCONTROLLER_TRACE_ENABLE
 }
  8004d78:	e8bd 4008 	ldmia.w	sp!, {r3, lr}
-		Trace::out("    LED3: on");
+		Trace::out("LED3: on\r\n");
  8004d7c:	f000 b87c 	b.w	8004e78 <_ZN5Trace3outEPKcz>
         HAL_GPIO_WritePin(LED3_GPIO_Port, LED3_Pin, GPIO_PIN_RESET);
  8004d80:	460a      	mov	r2, r1
  8004d82:	4804      	ldr	r0, [pc, #16]	; (8004d94 <_ZN13LedController7setLed3Eb+0x2c>)
  8004d84:	2110      	movs	r1, #16
  8004d86:	f7fb ffe9 	bl	8000d5c <HAL_GPIO_WritePin>
-		Trace::out("    LED3: off");
+		Trace::out("LED3: off\r\n");
  8004d8a:	4804      	ldr	r0, [pc, #16]	; (8004d9c <_ZN13LedController7setLed3Eb+0x34>)
 }
  8004d8c:	e8bd 4008 	ldmia.w	sp!, {r3, lr}
-		Trace::out("    LED3: off");
+		Trace::out("LED3: off\r\n");
  8004d90:	f000 b872 	b.w	8004e78 <_ZN5Trace3outEPKcz>
  8004d94:	40020400 	.word	0x40020400
- 8004d98:	080077b0 	.word	0x080077b0
- 8004d9c:	080077c0 	.word	0x080077c0
+ 8004d98:	080077ac 	.word	0x080077ac
+ 8004d9c:	080077b8 	.word	0x080077b8
 
 08004da0 <_ZN13LedControllerC1Ev>:
 LedController::LedController()
@@ -13204,7 +13204,7 @@ LedController::LedController()
  8004de4:	08004d69 	.word	0x08004d69
  8004de8:	08004d2d 	.word	0x08004d2d
  8004dec:	080075f8 	.word	0x080075f8
- 8004df0:	080077d0 	.word	0x080077d0
+ 8004df0:	080077c4 	.word	0x080077c4
 
 08004df4 <_ZN13LedController7setLedsEhb>:
 {
@@ -13496,9 +13496,9 @@ Uart::Uart(const unsigned char uartNbr, UART_HandleTypeDef * uartHandle, bool bT
  8004f5e:	bf00      	nop
  8004f60:	080072d4 	.word	0x080072d4
  8004f64:	20000268 	.word	0x20000268
- 8004f68:	0800783c 	.word	0x0800783c
- 8004f6c:	08007854 	.word	0x08007854
- 8004f70:	080078b8 	.word	0x080078b8
+ 8004f68:	08007830 	.word	0x08007830
+ 8004f6c:	08007848 	.word	0x08007848
+ 8004f70:	080078ac 	.word	0x080078ac
 
 08004f74 <_ZN4Uart13writeUsingDMAEPKhm>:
     }
@@ -13544,9 +13544,9 @@ void Uart::writeUsingDMA(const uint8_t * str, uint32_t length)
  8004fa0:	4a02      	ldr	r2, [pc, #8]	; (8004fac <_ZN4Uart13writeUsingDMAEPKhm+0x38>)
  8004fa2:	4803      	ldr	r0, [pc, #12]	; (8004fb0 <_ZN4Uart13writeUsingDMAEPKhm+0x3c>)
  8004fa4:	f000 fee0 	bl	8005d68 <__assert_func>
- 8004fa8:	080078c0 	.word	0x080078c0
+ 8004fa8:	080078b4 	.word	0x080078b4
  8004fac:	08007314 	.word	0x08007314
- 8004fb0:	08007854 	.word	0x08007854
+ 8004fb0:	08007848 	.word	0x08007848
 
 08004fb4 <_ZN4Uart5writeEPKcj>:
 {
@@ -13656,7 +13656,7 @@ LoopFillZerobss:
   ldr   sp, =_estack      /* set stack pointer */
  800501c:	20050000 	.word	0x20050000
   ldr  r3, =_sidata
- 8005020:	08007b38 	.word	0x08007b38
+ 8005020:	08007b2c 	.word	0x08007b2c
   ldr  r0, =_sdata
  8005024:	20000000 	.word	0x20000000
   ldr  r3, =_edata
@@ -13862,7 +13862,7 @@ XFCustomEvent::XFCustomEvent(int id, interface::XFReactive * pBehavior)
  8005116:	bc70      	pop	{r4, r5, r6}
  8005118:	4770      	bx	lr
  800511a:	bf00      	nop
- 800511c:	080078e8 	.word	0x080078e8
+ 800511c:	080078dc 	.word	0x080078dc
 
 08005120 <_ZNK14XFInitialEvent18deleteAfterConsumeEv>:
 }
@@ -14112,9 +14112,9 @@ void XFDispatcherDefault::unscheduleTimeout(int timeoutId, interface::XFReactive
  800522c:	4a02      	ldr	r2, [pc, #8]	; (8005238 <_ZN19XFDispatcherDefault5startEv+0x1c>)
  800522e:	4803      	ldr	r0, [pc, #12]	; (800523c <_ZN19XFDispatcherDefault5startEv+0x20>)
  8005230:	f000 fd9a 	bl	8005d68 <__assert_func>
- 8005234:	080078f4 	.word	0x080078f4
+ 8005234:	080078e8 	.word	0x080078e8
  8005238:	080073e0 	.word	0x080073e0
- 800523c:	080078fc 	.word	0x080078fc
+ 800523c:	080078f0 	.word	0x080078f0
 
 08005240 <_ZNK19XFDispatcherDefault13dispatchEventEPK7XFEvent>:
 
@@ -14187,8 +14187,8 @@ XFDispatcherDefault::XFDispatcherDefault() :
  8005296:	4803      	ldr	r0, [pc, #12]	; (80052a4 <_ZN19XFDispatcherDefaultC1Ev+0x38>)
  8005298:	f000 fd66 	bl	8005d68 <__assert_func>
  800529c:	08007414 	.word	0x08007414
- 80052a0:	080078f4 	.word	0x080078f4
- 80052a4:	080078fc 	.word	0x080078fc
+ 80052a0:	080078e8 	.word	0x080078e8
+ 80052a4:	080078f0 	.word	0x080078f0
 
 080052a8 <_ZN19XFDispatcherDefaultD1Ev>:
 XFDispatcherDefault::~XFDispatcherDefault()
@@ -14955,9 +14955,9 @@ void XFTimeoutManagerDefault::returnTimeout(XFTimeout * pTimeout)
  80056b4:	4a02      	ldr	r2, [pc, #8]	; (80056c0 <_ZN23XFTimeoutManagerDefault4tickEv+0xc0>)
  80056b6:	4803      	ldr	r0, [pc, #12]	; (80056c4 <_ZN23XFTimeoutManagerDefault4tickEv+0xc4>)
  80056b8:	f000 fb56 	bl	8005d68 <__assert_func>
- 80056bc:	08007960 	.word	0x08007960
+ 80056bc:	08007954 	.word	0x08007954
  80056c0:	080074bc 	.word	0x080074bc
- 80056c4:	08007970 	.word	0x08007970
+ 80056c4:	08007964 	.word	0x08007964
 
 080056c8 <_ZN23XFTimeoutManagerDefaultC1Ev>:
 XFTimeoutManagerDefault::XFTimeoutManagerDefault() :
@@ -14998,8 +14998,8 @@ XFTimeoutManagerDefault::XFTimeoutManagerDefault() :
  80056f6:	f000 fb37 	bl	8005d68 <__assert_func>
  80056fa:	bf00      	nop
  80056fc:	08007498 	.word	0x08007498
- 8005700:	080078f4 	.word	0x080078f4
- 8005704:	08007970 	.word	0x08007970
+ 8005700:	080078e8 	.word	0x080078e8
+ 8005704:	08007964 	.word	0x08007964
 
 08005708 <_ZN9interface16XFTimeoutManager11getInstanceEv>:
 {
@@ -15984,7 +15984,7 @@ int32_t XF_tickIntervalInMilliseconds()
  8005c7a:	f885 3067 	strb.w	r3, [r5, #103]	; 0x67
  8005c7e:	4620      	mov	r0, r4
  8005c80:	f7ff ffbe 	bl	8005c00 <_ZSt19__throw_logic_errorPKc>
- 8005c84:	080079e3 	.word	0x080079e3
+ 8005c84:	080079d7 	.word	0x080079d7
 
 08005c88 <_ZN9__gnu_cxx15__concat_size_tEPcjj>:
  8005c88:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
@@ -16015,7 +16015,7 @@ int32_t XF_tickIntervalInMilliseconds()
  8005ccc:	f04f 34ff 	mov.w	r4, #4294967295
  8005cd0:	e7f9      	b.n	8005cc6 <_ZN9__gnu_cxx15__concat_size_tEPcjj+0x3e>
  8005cd2:	bf00      	nop
- 8005cd4:	080079d8 	.word	0x080079d8
+ 8005cd4:	080079cc 	.word	0x080079cc
 
 08005cd8 <_ZN9__gnu_cxx15__snprintf_liteEPcjPKcSt9__va_list>:
  8005cd8:	3901      	subs	r1, #1
@@ -16105,9 +16105,9 @@ int32_t XF_tickIntervalInMilliseconds()
  8005d90:	e7f2      	b.n	8005d78 <__assert_func+0x10>
  8005d92:	bf00      	nop
  8005d94:	20000010 	.word	0x20000010
- 8005d98:	08007a4c 	.word	0x08007a4c
- 8005d9c:	08007a59 	.word	0x08007a59
- 8005da0:	08007a87 	.word	0x08007a87
+ 8005d98:	08007a40 	.word	0x08007a40
+ 8005d9c:	08007a4d 	.word	0x08007a4d
+ 8005da0:	08007a7b 	.word	0x08007a7b
 
 08005da4 <atexit>:
  8005da4:	2300      	movs	r3, #0
@@ -16165,10 +16165,10 @@ int32_t XF_tickIntervalInMilliseconds()
  8005e12:	4798      	blx	r3
  8005e14:	3501      	adds	r5, #1
  8005e16:	e7f2      	b.n	8005dfe <__libc_init_array+0x1e>
- 8005e18:	08007b28 	.word	0x08007b28
- 8005e1c:	08007b28 	.word	0x08007b28
- 8005e20:	08007b28 	.word	0x08007b28
- 8005e24:	08007b30 	.word	0x08007b30
+ 8005e18:	08007b1c 	.word	0x08007b1c
+ 8005e1c:	08007b1c 	.word	0x08007b1c
+ 8005e20:	08007b1c 	.word	0x08007b1c
+ 8005e24:	08007b24 	.word	0x08007b24
 
 08005e28 <malloc>:
  8005e28:	4b02      	ldr	r3, [pc, #8]	; (8005e34 <malloc+0xc>)
@@ -16642,12 +16642,12 @@ int32_t XF_tickIntervalInMilliseconds()
  8006248:	f000 f888 	bl	800635c <_printf_i>
  800624c:	e7ec      	b.n	8006228 <_vfiprintf_r+0x1e4>
  800624e:	bf00      	nop
- 8006250:	08007ae0 	.word	0x08007ae0
- 8006254:	08007a8c 	.word	0x08007a8c
- 8006258:	08007b00 	.word	0x08007b00
- 800625c:	08007ac0 	.word	0x08007ac0
- 8006260:	08007a92 	.word	0x08007a92
- 8006264:	08007a96 	.word	0x08007a96
+ 8006250:	08007ad4 	.word	0x08007ad4
+ 8006254:	08007a80 	.word	0x08007a80
+ 8006258:	08007af4 	.word	0x08007af4
+ 800625c:	08007ab4 	.word	0x08007ab4
+ 8006260:	08007a86 	.word	0x08007a86
+ 8006264:	08007a8a 	.word	0x08007a8a
  8006268:	00000000 	.word	0x00000000
  800626c:	0800601f 	.word	0x0800601f
 
@@ -16983,8 +16983,8 @@ int32_t XF_tickIntervalInMilliseconds()
  800656e:	f884 3042 	strb.w	r3, [r4, #66]	; 0x42
  8006572:	f104 0542 	add.w	r5, r4, #66	; 0x42
  8006576:	e76c      	b.n	8006452 <_printf_i+0xf6>
- 8006578:	08007a9d 	.word	0x08007a9d
- 800657c:	08007aae 	.word	0x08007aae
+ 8006578:	08007a91 	.word	0x08007a91
+ 800657c:	08007aa2 	.word	0x08007aa2
 
 08006580 <_sbrk_r>:
  8006580:	b538      	push	{r3, r4, r5, lr}
@@ -17169,9 +17169,9 @@ int32_t XF_tickIntervalInMilliseconds()
  80066fa:	4638      	mov	r0, r7
  80066fc:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
  80066fe:	bf00      	nop
- 8006700:	08007ae0 	.word	0x08007ae0
- 8006704:	08007b00 	.word	0x08007b00
- 8006708:	08007ac0 	.word	0x08007ac0
+ 8006700:	08007ad4 	.word	0x08007ad4
+ 8006704:	08007af4 	.word	0x08007af4
+ 8006708:	08007ab4 	.word	0x08007ab4
 
 0800670c <__swsetup_r>:
  800670c:	4b32      	ldr	r3, [pc, #200]	; (80067d8 <__swsetup_r+0xcc>)
@@ -17263,9 +17263,9 @@ int32_t XF_tickIntervalInMilliseconds()
  80067d4:	e7f7      	b.n	80067c6 <__swsetup_r+0xba>
  80067d6:	bf00      	nop
  80067d8:	20000010 	.word	0x20000010
- 80067dc:	08007ae0 	.word	0x08007ae0
- 80067e0:	08007b00 	.word	0x08007b00
- 80067e4:	08007ac0 	.word	0x08007ac0
+ 80067dc:	08007ad4 	.word	0x08007ad4
+ 80067e0:	08007af4 	.word	0x08007af4
+ 80067e4:	08007ab4 	.word	0x08007ab4
 
 080067e8 <__register_exitproc>:
  80067e8:	e92d 43f8 	stmdb	sp!, {r3, r4, r5, r6, r7, r8, r9, lr}
@@ -17502,9 +17502,9 @@ int32_t XF_tickIntervalInMilliseconds()
  80069fe:	2000      	movs	r0, #0
  8006a00:	bd38      	pop	{r3, r4, r5, pc}
  8006a02:	bf00      	nop
- 8006a04:	08007ae0 	.word	0x08007ae0
- 8006a08:	08007b00 	.word	0x08007b00
- 8006a0c:	08007ac0 	.word	0x08007ac0
+ 8006a04:	08007ad4 	.word	0x08007ad4
+ 8006a08:	08007af4 	.word	0x08007af4
+ 8006a0c:	08007ab4 	.word	0x08007ab4
 
 08006a10 <std>:
  8006a10:	2300      	movs	r3, #0
@@ -17600,7 +17600,7 @@ int32_t XF_tickIntervalInMilliseconds()
  8006ae2:	2301      	movs	r3, #1
  8006ae4:	61a3      	str	r3, [r4, #24]
  8006ae6:	bd10      	pop	{r4, pc}
- 8006ae8:	08007a88 	.word	0x08007a88
+ 8006ae8:	08007a7c 	.word	0x08007a7c
  8006aec:	08006a59 	.word	0x08006a59
 
 08006af0 <__sfp>:
@@ -17649,7 +17649,7 @@ int32_t XF_tickIntervalInMilliseconds()
  8006b58:	e9c4 5512 	strd	r5, r5, [r4, #72]	; 0x48
  8006b5c:	e7e9      	b.n	8006b32 <__sfp+0x42>
  8006b5e:	bf00      	nop
- 8006b60:	08007a88 	.word	0x08007a88
+ 8006b60:	08007a7c 	.word	0x08007a7c
  8006b64:	ffff0001 	.word	0xffff0001
 
 08006b68 <_fwalk_reent>:
@@ -18084,9 +18084,9 @@ int32_t XF_tickIntervalInMilliseconds()
  8006f44:	f7ff fa0a 	bl	800635c <_printf_i>
  8006f48:	e7ea      	b.n	8006f20 <_svfiprintf_r+0x1b0>
  8006f4a:	bf00      	nop
- 8006f4c:	08007a8c 	.word	0x08007a8c
- 8006f50:	08007a92 	.word	0x08007a92
- 8006f54:	08007a96 	.word	0x08007a96
+ 8006f4c:	08007a80 	.word	0x08007a80
+ 8006f50:	08007a86 	.word	0x08007a86
+ 8006f54:	08007a8a 	.word	0x08007a8a
  8006f58:	00000000 	.word	0x00000000
  8006f5c:	08006cbd 	.word	0x08006cbd
 

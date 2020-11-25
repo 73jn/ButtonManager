@@ -65,11 +65,11 @@ void LedController::setLed0(bool bOn /* = true */)
 	if (bOn)
 	{
 		// Not using "%s" here (bug in gcc c-library!)
-		Trace::out(" LED0: on");
+		Trace::out("LED0: on\r\n");
 	}
 	else
 	{
-		Trace::out(" LED0: off");
+		Trace::out("LED0: off\r\n");
 	}
 #endif // LEDCONTROLLER_TRACE_ENABLE
 }
@@ -89,11 +89,11 @@ void LedController::setLed1(bool bOn /* = true */)
 #if (LEDCONTROLLER_TRACE_ENABLE != 0)
     if (bOn)
 	{
-		Trace::out("  LED1: on");
+		Trace::out("LED1: on\r\n");
 	}
 	else
 	{
-		Trace::out("  LED1: off");
+		Trace::out("LED1: off\r\n");
 	}
 #endif // LEDCONTROLLER_TRACE_ENABLE
 }
@@ -113,11 +113,11 @@ void LedController::setLed2(bool bOn /* = true */)
 #if (LEDCONTROLLER_TRACE_ENABLE != 0)
     if (bOn)
 	{
-		Trace::out("   LED2: on");
+		Trace::out("LED2: on\r\n");
 	}
 	else
 	{
-		Trace::out("   LED2: off");
+		Trace::out("LED2: off\r\n");
 	}
 #endif // LEDCONTROLLER_TRACE_ENABLE
 }
@@ -137,11 +137,11 @@ void LedController::setLed3(bool bOn /* = true */)
 #if (LEDCONTROLLER_TRACE_ENABLE != 0)
     if (bOn)
 	{
-		Trace::out("    LED3: on");
+		Trace::out("LED3: on\r\n");
 	}
 	else
 	{
-		Trace::out("    LED3: off");
+		Trace::out("LED3: off\r\n");
 	}
 #endif // LEDCONTROLLER_TRACE_ENABLE
 }
