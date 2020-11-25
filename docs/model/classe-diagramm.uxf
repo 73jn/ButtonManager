@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>48</x>
-      <y>630</y>
+      <x>12</x>
+      <y>636</y>
       <w>270</w>
       <h>114</h>
     </coordinates>
@@ -26,8 +26,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>228</x>
-      <y>288</y>
+      <x>192</x>
+      <y>294</y>
       <w>228</w>
       <h>132</h>
     </coordinates>
@@ -42,8 +42,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>120</x>
-      <y>360</y>
+      <x>84</x>
+      <y>366</y>
       <w>120</w>
       <h>282</h>
     </coordinates>
@@ -53,8 +53,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>354</x>
-      <y>492</y>
+      <x>318</x>
+      <y>498</y>
       <w>132</w>
       <h>36</h>
     </coordinates>
@@ -66,8 +66,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>228</x>
-      <y>438</y>
+      <x>192</x>
+      <y>444</y>
       <w>390</w>
       <h>30</h>
     </coordinates>
@@ -78,8 +78,8 @@ void (ButtonsControllerCallbackProvider::*CallbackMethod)(uint16_t buttonIndex, 
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>414</x>
-      <y>462</y>
+      <x>378</x>
+      <y>468</y>
       <w>18</w>
       <h>42</h>
     </coordinates>
@@ -89,8 +89,8 @@ void (ButtonsControllerCallbackProvider::*CallbackMethod)(uint16_t buttonIndex, 
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>234</x>
-      <y>522</y>
+      <x>198</x>
+      <y>528</y>
       <w>198</w>
       <h>120</h>
     </coordinates>
@@ -100,8 +100,8 @@ void (ButtonsControllerCallbackProvider::*CallbackMethod)(uint16_t buttonIndex, 
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>744</x>
-      <y>444</y>
+      <x>708</x>
+      <y>450</y>
       <w>78</w>
       <h>54</h>
     </coordinates>
@@ -113,8 +113,8 @@ void (ButtonsControllerCallbackProvider::*CallbackMethod)(uint16_t buttonIndex, 
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>474</x>
-      <y>630</y>
+      <x>438</x>
+      <y>636</y>
       <w>192</w>
       <h>114</h>
     </coordinates>
@@ -135,8 +135,8 @@ ButtonStateSm
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>486</x>
-      <y>576</y>
+      <x>450</x>
+      <y>582</y>
       <w>90</w>
       <h>30</h>
     </coordinates>
@@ -147,8 +147,8 @@ uint8_t ButtonIndex</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>528</x>
-      <y>600</y>
+      <x>492</x>
+      <y>606</y>
       <w>18</w>
       <h>42</h>
     </coordinates>
@@ -158,8 +158,8 @@ uint8_t ButtonIndex</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>588</x>
-      <y>576</y>
+      <x>552</x>
+      <y>582</y>
       <w>72</w>
       <h>30</h>
     </coordinates>
@@ -170,8 +170,8 @@ ButtonState</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>618</x>
-      <y>600</y>
+      <x>582</x>
+      <y>606</y>
       <w>18</w>
       <h>42</h>
     </coordinates>
@@ -181,8 +181,8 @@ ButtonState</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>714</x>
-      <y>648</y>
+      <x>678</x>
+      <y>654</y>
       <w>606</w>
       <h>162</h>
     </coordinates>
@@ -210,8 +210,8 @@ ButtonController
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>948</x>
-      <y>588</y>
+      <x>912</x>
+      <y>594</y>
       <w>114</w>
       <h>30</h>
     </coordinates>
@@ -222,8 +222,8 @@ ButtonControllerState</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>996</x>
-      <y>612</y>
+      <x>960</x>
+      <y>618</y>
       <w>18</w>
       <h>48</h>
     </coordinates>
@@ -233,8 +233,8 @@ ButtonControllerState</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>480</x>
-      <y>288</y>
+      <x>444</x>
+      <y>294</y>
       <w>342</w>
       <h>132</h>
     </coordinates>
@@ -248,8 +248,8 @@ ButtonControllerState</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>678</x>
-      <y>414</y>
+      <x>642</x>
+      <y>420</y>
       <w>72</w>
       <h>246</h>
     </coordinates>
@@ -259,8 +259,8 @@ ButtonControllerState</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>780</x>
-      <y>492</y>
+      <x>744</x>
+      <y>498</y>
       <w>18</w>
       <h>168</h>
     </coordinates>
@@ -270,8 +270,8 @@ ButtonControllerState</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>312</x>
-      <y>678</y>
+      <x>276</x>
+      <y>684</y>
       <w>174</w>
       <h>24</h>
     </coordinates>
@@ -283,8 +283,8 @@ r2=4</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>702</x>
-      <y>564</y>
+      <x>666</x>
+      <y>570</y>
       <w>630</w>
       <h>258</h>
     </coordinates>
@@ -296,8 +296,8 @@ bg=red</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1122</x>
-      <y>408</y>
+      <x>1086</x>
+      <y>414</y>
       <w>282</w>
       <h>114</h>
     </coordinates>
@@ -316,8 +316,8 @@ bg=red</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1476</x>
-      <y>408</y>
+      <x>1440</x>
+      <y>414</y>
       <w>192</w>
       <h>114</h>
     </coordinates>
@@ -337,8 +337,8 @@ LedEventsSm
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1536</x>
-      <y>360</y>
+      <x>1500</x>
+      <y>366</y>
       <w>72</w>
       <h>30</h>
     </coordinates>
@@ -349,8 +349,8 @@ LedState</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1398</x>
-      <y>450</y>
+      <x>1362</x>
+      <y>456</y>
       <w>90</w>
       <h>24</h>
     </coordinates>
@@ -361,8 +361,8 @@ LedState</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1566</x>
-      <y>384</y>
+      <x>1530</x>
+      <y>390</y>
       <w>18</w>
       <h>36</h>
     </coordinates>
@@ -372,8 +372,8 @@ LedState</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>846</x>
-      <y>366</y>
+      <x>810</x>
+      <y>372</y>
       <w>228</w>
       <h>54</h>
     </coordinates>
@@ -388,8 +388,8 @@ LedState</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>918</x>
-      <y>288</y>
+      <x>882</x>
+      <y>294</y>
       <w>90</w>
       <h>30</h>
     </coordinates>
@@ -400,8 +400,8 @@ uint8_t ButtonIndex</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>954</x>
-      <y>312</y>
+      <x>918</x>
+      <y>318</y>
       <w>18</w>
       <h>66</h>
     </coordinates>
@@ -411,8 +411,8 @@ uint8_t ButtonIndex</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>216</x>
-      <y>234</y>
+      <x>180</x>
+      <y>240</y>
       <w>876</w>
       <h>306</h>
     </coordinates>
@@ -424,8 +424,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1002</x>
-      <y>414</y>
+      <x>966</x>
+      <y>420</y>
       <w>120</w>
       <h>36</h>
     </coordinates>
@@ -435,8 +435,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1122</x>
-      <y>330</y>
+      <x>1086</x>
+      <y>336</y>
       <w>282</w>
       <h>60</h>
     </coordinates>
@@ -451,8 +451,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1038</x>
-      <y>336</y>
+      <x>1002</x>
+      <y>342</y>
       <w>84</w>
       <h>42</h>
     </coordinates>
@@ -462,8 +462,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>480</x>
-      <y>414</y>
+      <x>444</x>
+      <y>420</y>
       <w>192</w>
       <h>108</h>
     </coordinates>
@@ -474,8 +474,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>342</x>
-      <y>258</y>
+      <x>306</x>
+      <y>264</y>
       <w>552</w>
       <h>120</h>
     </coordinates>
@@ -486,8 +486,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1182</x>
-      <y>264</y>
+      <x>1146</x>
+      <y>270</y>
       <w>156</w>
       <h>48</h>
     </coordinates>
@@ -500,8 +500,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>1110</x>
-      <y>246</y>
+      <x>1074</x>
+      <y>252</y>
       <w>570</w>
       <h>288</h>
     </coordinates>
@@ -513,8 +513,8 @@ bg=pink</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1254</x>
-      <y>306</y>
+      <x>1218</x>
+      <y>312</y>
       <w>24</w>
       <h>36</h>
     </coordinates>
@@ -525,8 +525,8 @@ bg=pink</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1332</x>
-      <y>282</y>
+      <x>1296</x>
+      <y>288</y>
       <w>96</w>
       <h>150</h>
     </coordinates>
@@ -537,8 +537,8 @@ r2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1092</x>
-      <y>270</y>
+      <x>1056</x>
+      <y>276</y>
       <w>102</w>
       <h>390</h>
     </coordinates>
@@ -549,8 +549,8 @@ r2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>300</x>
-      <y>294</y>
+      <x>264</x>
+      <y>300</y>
       <w>894</w>
       <h>348</h>
     </coordinates>
@@ -561,8 +561,8 @@ r2=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>366</x>
-      <y>762</y>
+      <x>330</x>
+      <y>768</y>
       <w>186</w>
       <h>48</h>
     </coordinates>
@@ -575,8 +575,8 @@ r2=1</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>36</x>
-      <y>558</y>
+      <x>0</x>
+      <y>564</y>
       <w>642</w>
       <h>258</h>
     </coordinates>
@@ -588,8 +588,8 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>528</x>
-      <y>516</y>
+      <x>492</x>
+      <y>522</y>
       <w>876</w>
       <h>330</h>
     </coordinates>
